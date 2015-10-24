@@ -9,8 +9,8 @@ beep.sh | ./beep2gcode > beep.gcode
 
 Como [configurar la impresora](http://maquinaslibres.noblogs.org/musica-en-tu-impresora/)
 
-Enlaces
--------
+Origen de las canciones
+-----------------------
 
 * http://blog.dhampir.no/content/fun-with-beep
 * http://blog.meyju.net/2011/07/27/beep-sounds/
