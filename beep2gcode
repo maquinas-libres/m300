@@ -1,0 +1,9 @@
+cat $1 | sed 's/-//g; s/n/\n/g; s/\ //g;s/f/M300 S/g;s/l/ P/g; s/D/\nM300 S0 P/g; s/\#.*//g; s/beep//g'\
+| grep -v "^$" \
+| while read A; do
+	R=$(echo $A | grep "r"| cut -dr -f2 | cut -d" " -f1 )
+	[ "$R" = "" ] && R=1
+	for B in $(seq $R); do
+		echo $A | sed 's/r.*\ / /g'
+	done
+done
